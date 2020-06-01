@@ -15,7 +15,7 @@ Transedition and Diplomatic Edition encoding (useful for understand the pre-exis
 
 ## Critical Edition (useful part for your work)
 Normalisation from diplomatic to critical text
-```<choice><orig>fù</orig><corr>fu</corr></choice>
+```<choice><orig>fù</orig><corr>fu</corr></choice> ```
 be careful with spaces! EVT is sensitive to the spaces: please respect meticulously
  the space between the words (we suggest you to write all tags on a single line) 
 
