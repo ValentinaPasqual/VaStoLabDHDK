@@ -2,6 +2,10 @@
 
 Transedition and Diplomatic Edition encoding (useful for understand the pre-existing encoding)
 
+## Enabling Images 
+
+``` ```
+
 ## Categorise people, places and events (they are declared in TEI header)
 ```  <persName ref="#Torello">Lelio Torello</persName> ```
 
