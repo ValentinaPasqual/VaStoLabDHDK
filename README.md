@@ -2,7 +2,7 @@
 
 In this repostitory you will find all the materials to work on VaSto Project. 
 
-* **Slides of the laboratory** (URL - DOWNLOAD)
+* **Slides of the laboratory** 
 
 * **Prototype**. This file shows you how the work should be encoded at the end of the workshop. Look at it if something is not clear enough or ask us on Teams. 
 
