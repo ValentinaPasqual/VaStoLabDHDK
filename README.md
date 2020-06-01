@@ -4,6 +4,8 @@ In this repostitory you will find all the materials to work on VaSto Project.
 
 * **Slides of the laboratory** (URL - DOWNLOAD)
 
+* **Prototype**. This file shows you how the work should be encoded at the end of the workshop. Look at it if something is not clear enough or ask us on Teams. 
+
 * **XMLfiles**. In this folder you can find the XML files on which you will work on. Each of you will choose a page of "Storia Fiorentina" to start to encode the critical edition.
 
 * **EncodingGuidelines**. In this folder you can find the tags you have to reuse while encoding your "Storia Fiorentina" folio. 
