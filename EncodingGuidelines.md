@@ -1,4 +1,4 @@
-#VaSto Encoding Guidelines
+# VaSto Encoding Guidelines
 
 Transedition and Diplomatic Edition encoding (useful for understand the pre-existing encoding)
 
