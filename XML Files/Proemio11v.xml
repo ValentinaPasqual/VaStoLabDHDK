@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML"
+    xmlns:enrich="http://projects.oucs.ox.ac.uk/ENRICH/ODD/RomaResults/enrich.rng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Storia Fiorentina</title>
+                <author xml:id="B.V.">Benedetto Varchi</author>
+                <respStmt>
+                    
+                    <resp>Responsabile progetto</resp>
+                    <persName xml:id="P.I.">Paola Italia</persName>
+                </respStmt>
+                <respStmt>
+                    
+                    <resp>Codifica</resp>
+                    <persName xml:id="R.P.">Roberta Priore</persName>
+                    
+                </respStmt>
+                <respStmt>
+                    <resp>Sviluppo interfaccia web</resp>
+                    <persName xml:id="V.P.">Valentina Pasqual</persName>
+                    
+                </respStmt>
+                <respStmt>
+                    <resp>Assistenza sviluppo interfaccia web</resp>
+                    <persName xml:id="M.C.">Milena Corbellini</persName>
+                    
+                </respStmt>
+                <respStmt>
+                    <resp>Edizione</resp>
+                    <persName xml:id="D.B.">Dario Brancato</persName>
+                </respStmt>
+                
+                
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <interpGrp>
+                        <interp xml:id="rec1">Recensio 1</interp>
+                        <interp xml:id="rec2">Censura</interp>
+                        <interp xml:id="rec3">Recensio 3</interp>
+                    </interpGrp>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>VaSto Project;</publisher>
+                <pubPlace>Bologna</pubPlace>
+                <date>2020</date>
+                <availability>
+                    <p>Questa risorsa digitale è liberamente accessibile per uso personale o
+                        scientifico. Ogni uso commerciale è vietato</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <listWit xml:id="rec1_wits" ana="#rec1" resp="#D.B.">
+                        <head>Author Version</head>
+                        <witness xml:id="RC4">
+                            <msDesc>
+                                <msIdentifier>
+                                    <settlement>Roma</settlement>
+                                    <repository>Accademia Nazionale dei Lincei e
+                                        Corsiniana</repository>
+                                    <idno>RC4</idno>
+                                </msIdentifier>
+                                <msContents>
+                                    <msItem>
+                                        <locus from="8v" to="13r">8v - 13r</locus>
+                                        <title type="work" subtype="prose">Proemio</title>
+                                        <incipit>DELLA STORIA FIORENTINA</incipit>
+                                        <explicit>cominciamento alla Storia.</explicit>
+                                    </msItem>
+                                    
+                                </msContents>
+                                <physDesc>
+                                    <handDesc>
+                                        <handNote scribe="Bonsi" xml:id="A1">Mano di Bonsi, testo
+                                            base su RC4;</handNote>
+                                        <handNote scribe="Varchi" xml:id="A2">Mano di Varchi,
+                                            revisioni;</handNote>
+                                        <handNote scribe="N.I." xml:id="A4">Altra mano non
+                                            identificata</handNote>
+                                    </handDesc>
+                                </physDesc>
+                            </msDesc>
+                        </witness>
+                        <witness xml:id="RC4c">
+                            <msDesc>
+                                <msIdentifier>
+                                    <settlement>Roma</settlement>
+                                    <repository>Accademia Nazionale dei Lincei e
+                                        Corsiniana</repository>
+                                    <idno>RC4 censured</idno>
+                                </msIdentifier>
+                                <msContents>
+                                    <msItem>
+                                        <locus from="8v" to="13r">8v - 13r</locus>
+                                        <title type="work" subtype="prose">Proemio</title>
+                                        <incipit/>
+                                        <explicit/>
+                                    </msItem>
+                                </msContents>
+                                <physDesc>
+                                    <handDesc>
+                                        <handNote scribe="Baldini" xml:id="A3"> Mano di Baldini,
+                                            interventi di correzioni e aggiunte;</handNote>
+                                    </handDesc>
+                                </physDesc>
+                            </msDesc>
+                        </witness>
+                    </listWit>
+                    
+                    
+                </listWit>
+                <listPerson>
+                    <person xml:id="Famiglia_Medici">
+                        <persName type="fam_citata">Medici</persName>
+                    </person>
+                    <person xml:id="Cosimo">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/121802096"
+                            ref="http://www.treccani.it/enciclopedia/cosimo-de-medici_(Dizionario-Biografico)"
+                            >Cosimo de' Medici</persName>
+                    </person>
+                    <person xml:id="Passerini">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/15853440"
+                            ref="http://www.treccani.it/enciclopedia/silvio-passerini_%28Dizionario-Biografico%29/"
+                            >Passerini, Silvio </persName>
+                    </person>
+                    <person xml:id="ClementeVII">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/90633828"
+                            ref="http://www.treccani.it/enciclopedia/papa-clemente-vii_%28Dizionario-Biografico%29/"
+                            >Clemente VII</persName>
+                    </person>
+                    <person xml:id="Ippolito">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/58947708"
+                            ref="http://www.treccani.it/enciclopedia/ippolito-de-medici_(Dizionario-Biografico)"
+                            >De' Medici, Ippolito</persName>
+                    </person>
+                    <person xml:id="Alessandro_de_Medici">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/19258729"
+                            ref="http://www.treccani.it/enciclopedia/alessandro-de-medici-primo-duca-di-firenze_%28Dizionario-Biografico%29/"
+                            >De' Medici, Alessandro</persName>
+                    </person>
+                    <person xml:id="Lorenzo_De_Medici">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/69724503"
+                            ref="http://www.treccani.it/enciclopedia/lorenzo-de-medici-duca-di-urbino_(Dizionario-Biografico)/"
+                            >De' Medici, Lorenzo</persName>
+                    </person>
+                    <person xml:id="Capponi">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/90356940"
+                            ref="http://www.treccani.it/enciclopedia/niccolo-capponi_(Dizionario-Biografico)"
+                            > Capponi, Niccolò </persName>
+                    </person>
+                    <person xml:id="F_Carducci">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/90272314"
+                            ref="http://www.treccani.it/enciclopedia/francesco-carducci_res-011e1df0-87ea-11dc-8e9d-0016357eee51_(Dizionario-Biografico)"
+                            >Carducci, Francesco</persName>
+                    </person>
+                    <person xml:id="Girolami">
+                        <persName type="pers_citata"
+                            ref="http://www.treccani.it/enciclopedia/raffaello-girolami_%28Dizionario-Biografico%29/"
+                            >Girolami, Raffaello</persName>
+                    </person>
+                    <person xml:id="Carlo_V">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/88598818">Carlo
+                            V</persName>
+                    </person>
+                    <person xml:id="Carlo_Magno">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/89643029">Carlo
+                            Magno</persName>
+                    </person>
+                    <person xml:id="De_Rossi">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/106968998"
+                            ref="http://www.treccani.it/enciclopedia/giovanni-girolamo-rossi_%28Dizionario-Biografico%29/"
+                            >De Rossi, Giovan Girolamo</persName>
+                    </person>
+                    <person xml:id="Torello">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/2458669"
+                            ref="www.treccani.it/enciclopedia/lelio-torelli">Torello,
+                            Lelio</persName>
+                    </person>
+                    <person xml:id="Plutarco">
+                        <persName type="autore_citato" sameAs="http://viaf.org/viaf/268955446"
+                            >Plutarco</persName>
+                    </person>
+                    <person xml:id="Titolivio">
+                        <persName type="autore_citato" sameAs=" http://viaf.org/viaf/99942145">Tito
+                            Livio</persName>
+                    </person>
+                    <person xml:id="Buonanni">
+                        <persName type="pers_citata">Buonanni, Antonmaria</persName>
+                    </person>
+                    <person xml:id="Polibio">
+                        <persName type="autore_citato" sameAs="http://viaf.org/viaf/267920293"
+                            >Polibio</persName>
+                    </person>
+                    <person xml:id="Tacito">
+                        <persName type="autore_citato" sameAs="http://viaf.org/viaf/100226923"
+                            >Tacito, Publio Cornelio </persName>
+                    </person>
+                    <person xml:id="Leone_X">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/316407580"
+                            ref="http://www.treccani.it/enciclopedia/papa-leone-x_%28Dizionario-Biografico%29/"
+                            >Leone X, papa</persName>
+                    </person>
+                </listPerson>
+                <listPlace>
+                    <place xml:id="Firenze">
+                        <settlement type="città">Firenze</settlement>
+                    </place>
+                    <place xml:id="Cortona">
+                        <settlement type="città">Cortona</settlement>
+                    </place>
+                    <place xml:id="Lucca">
+                        <settlement type="città">Lucca</settlement>
+                    </place>
+                    <place xml:id="Francia">
+                        <settlement type="paese">Francia</settlement>
+                    </place>
+                    <place xml:id="Roma">
+                        <settlement type="città">Roma</settlement>
+                    </place>
+                    <place xml:id="Padova">
+                        <settlement type="città">Padova</settlement>
+                    </place>
+                    <place xml:id="Pavia">
+                        <settlement type="città">Pavia</settlement>
+                    </place>
+                </listPlace>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text n="Storia Fiorentina" xml:id="Storia_Fiorentina">
+        <body>
+            <div n="Proemio" type="Proemio" xml:id="Proemio">
+                <pb n="11v" xml:id="fol_11v" facs="data/images/single/fol_11v.JPG"
+                /><p><del hand="#A3">me medesimo, che le cose humane non da ragione, e
+                    giudizio, ma dal<choice>
+                        <orig>-</orig>
+                        <reg resp="#D.B."/>
+                    </choice><lb/> la fortuna, e dal caso si governassono, ò almeno, veggendosi
+                    si chia<choice>
+                        <orig>-</orig>
+                        <reg resp="#D.B."/>
+                    </choice><lb/> ramente, e cosi spesso da chi del tutto orbo non è, che le
+                    cose giu<choice>
+                        <orig>-</orig>
+                        <reg resp="#D.B."/>
+                    </choice><lb/> ste, e bene da i buoni, e prudenti huomini consigliate, e ottimamen<choice>
+                        <orig>-</orig>
+                        <reg resp="#D.B."/>
+                    </choice><lb/>te inviate ò sono poi nell’esseguirle il piu delle volte
+                    impedite, ò <lb/> riescono à non lieto fine; e per lo contrario le ingiuste
+                    e male,<lb/> dagl’huomini rei, e temerarij consultate, e pessimamente incamina<choice>
+                        <orig>-</orig>
+                        <reg resp="#D.B."/>
+                    </choice><lb/>te, senza impedimento alcuno, ricevere felicissimamente
+                    succedono,<lb/> che nïuna si truovi quaggiù, ne prudenza, ne innocenza per gran<choice>
+                        <orig>-</orig>
+                        <reg resp="#D.B."/>
+                    </choice><lb/>de che ella sia, la quale ò si debba credere bastevole à
+                    pr<del hand="#A2">ov</del><add hand="#A2" place="above"
+                        >e</add>vedere,<lb/> e regolare gl’avvenimenti, e i successi delle cose, ò
+                    si possa tenere <lb/>sicura di non dovere essere, quando che sia non solo
+                    vilipesa, e scher<choice>
+                        <orig>-</orig>
+                        <reg resp="#D.B."/>
+                    </choice><lb/>nita, ma offesa, e oltraggiata, sì universalmente da tutti, e
+                    sì da <lb/>coloro particolarmente, i quali più pregiarla, et honorarla, e
+                    più <lb/>difenderla, e premiarla doverrebbono. E per certo se le cose (come
+                    <lb/>i Filosofi dicono, e la ragione pare che richieggia) deono per lo
+                    <lb/>più, e nella maggior parte del tempo essere rettamente disposte, <lb/>e
+                    secondo la propria natura loro, mostrando le storie, che il mondo <lb/>fù
+                    quello medesimo sempre; e sempre à rovescio di quello, che i pre<choice>
+                        <orig>-</orig>
+                        <reg resp="#D.B."/>
+                    </choice><lb/>cetti loro ne insegnano, si resse, e governò, potrebbe <choice>
+                        <sic>ragionevolme<choice>
+                            <orig>-</orig>
+                            <reg resp="#D.B."/>
+                        </choice><lb/>te</sic>
+                        <corr resp="#D.B.">ragionevolmente</corr>
+                    </choice> alcuno dubitare, che la Natura delle cose, et in ispezie q<emph
+                        rend="italic">ue</emph>lla<lb/> degl’huomini non sia quella, che essi
+                    affermano, che ella è, ma<lb/> quella, che la pruova stessa di tante, e
+                    tante centinaia d’anni <lb/>ha dimostrato, e dimostra continovamente, che
+                    ella sia; ò almeno <lb/>conoscendo per isperienza, alla quale non
+                    s’oppongono se non </del></p>
+            </div>
+        </body>
+    </text>
+</TEI>
