@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:enrich="http://projects.oucs.ox.ac.uk/ENRICH/ODD/RomaResults/enrich.rng" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Storia Fiorentina</title>
+                <author xml:id="B.V.">Benedetto Varchi</author>
+                <respStmt>
+                    <resp>Responsabile progetto</resp>
+                    <persName xml:id="P.I.">Paola Italia</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Codifica</resp>
+                    <persName xml:id="R.P.">Roberta Priore</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Sviluppo interfaccia web</resp>
+                    <persName xml:id="V.P.">Valentina Pasqual</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Assistenza sviluppo interfaccia web</resp>
+                    <persName xml:id="M.C.">Milena Corbellini</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Edizione</resp>
+                    <persName xml:id="D.B.">Dario Brancato</persName>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <interpGrp>
+                        <interp xml:id="rec1">Recensio 1</interp>
+                        <interp xml:id="rec2">Censura</interp>
+                        <interp xml:id="rec3">Recensio 3</interp>
+                    </interpGrp>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>VaSto Project;</publisher>
+                <pubPlace>Bologna</pubPlace>
+                <date>2020</date>
+                <availability>
+                    <p>Questa risorsa digitale è liberamente accessibile per uso personale o
+                        scientifico. Ogni uso commerciale è vietato</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <listWit xml:id="rec1_wits" ana="#rec1" resp="#D.B.">
+                        <head>Author Version</head>
+                        <witness xml:id="RC4">
+                            <msDesc>
+                                <msIdentifier>
+                                    <settlement>Roma</settlement>
+                                    <repository>Accademia Nazionale dei Lincei e
+                                        Corsiniana</repository>
+                                    <idno>RC4</idno>
+                                </msIdentifier>
+                                <msContents>
+                                    <msItem>
+                                        <locus from="8v" to="13r">8v - 13r</locus>
+                                        <title type="work" subtype="prose">Proemio</title>
+                                        <incipit>DELLA STORIA FIORENTINA</incipit>
+                                        <explicit>cominciamento alla Storia.</explicit>
+                                    </msItem>
+                                </msContents>
+                                <physDesc>
+                                    <handDesc>
+                                        <handNote scribe="Bonsi" xml:id="A1">Mano di Bonsi, testo
+                                            base su RC4;</handNote>
+                                        <handNote scribe="Varchi" xml:id="A2">Mano di Varchi,
+                                            revisioni;</handNote>
+                                        <handNote scribe="N.I." xml:id="A4">Altra mano non
+                                            identificata</handNote>
+                                    </handDesc>
+                                </physDesc>
+                            </msDesc>
+                        </witness>
+                        <witness xml:id="RC4c">
+                            <msDesc>
+                                <msIdentifier>
+                                    <settlement>Roma</settlement>
+                                    <repository>Accademia Nazionale dei Lincei e
+                                        Corsiniana</repository>
+                                    <idno>RC4 censured</idno>
+                                </msIdentifier>
+                                <msContents>
+                                    <msItem>
+                                        <locus from="8v" to="13r">8v - 13r</locus>
+                                        <title type="work" subtype="prose">Proemio</title>
+                                        <incipit />
+                                        <explicit />
+                                    </msItem>
+                                </msContents>
+                                <physDesc>
+                                    <handDesc>
+                                        <handNote scribe="Baldini" xml:id="A3">Mano di Baldini,
+                                            interventi di correzioni e aggiunte;</handNote>
+                                    </handDesc>
+                                </physDesc>
+                            </msDesc>
+                        </witness>
+                    </listWit>
+                </listWit>
+                <listPerson>
+                    <person xml:id="Famiglia_Medici">
+                        <persName type="fam_citata">Medici</persName>
+                    </person>
+                    <person xml:id="Cosimo">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/121802096" ref="http://www.treccani.it/enciclopedia/cosimo-de-medici_(Dizionario-Biografico)">Cosimo de' Medici</persName>
+                    </person>
+                    <person xml:id="Passerini">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/15853440" ref="http://www.treccani.it/enciclopedia/silvio-passerini_%28Dizionario-Biografico%29/">Passerini, Silvio</persName>
+                    </person>
+                    <person xml:id="ClementeVII">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/90633828" ref="http://www.treccani.it/enciclopedia/papa-clemente-vii_%28Dizionario-Biografico%29/">Clemente VII</persName>
+                    </person>
+                    <person xml:id="Ippolito">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/58947708" ref="http://www.treccani.it/enciclopedia/ippolito-de-medici_(Dizionario-Biografico)">De' Medici, Ippolito</persName>
+                    </person>
+                    <person xml:id="Alessandro_de_Medici">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/19258729" ref="http://www.treccani.it/enciclopedia/alessandro-de-medici-primo-duca-di-firenze_%28Dizionario-Biografico%29/">De' Medici, Alessandro</persName>
+                    </person>
+                    <person xml:id="Lorenzo_De_Medici">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/69724503" ref="http://www.treccani.it/enciclopedia/lorenzo-de-medici-duca-di-urbino_(Dizionario-Biografico)/">De' Medici, Lorenzo</persName>
+                    </person>
+                    <person xml:id="Capponi">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/90356940" ref="http://www.treccani.it/enciclopedia/niccolo-capponi_(Dizionario-Biografico)">Capponi, Niccolò</persName>
+                    </person>
+                    <person xml:id="F_Carducci">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/90272314" ref="http://www.treccani.it/enciclopedia/francesco-carducci_res-011e1df0-87ea-11dc-8e9d-0016357eee51_(Dizionario-Biografico)">Carducci, Francesco</persName>
+                    </person>
+                    <person xml:id="Girolami">
+                        <persName type="pers_citata" ref="http://www.treccani.it/enciclopedia/raffaello-girolami_%28Dizionario-Biografico%29/">Girolami, Raffaello</persName>
+                    </person>
+                    <person xml:id="Carlo_V">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/88598818">Carlo
+                            V</persName>
+                    </person>
+                    <person xml:id="Carlo_Magno">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/89643029">Carlo
+                            Magno</persName>
+                    </person>
+                    <person xml:id="De_Rossi">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/106968998" ref="http://www.treccani.it/enciclopedia/giovanni-girolamo-rossi_%28Dizionario-Biografico%29/">De Rossi, Giovan Girolamo</persName>
+                    </person>
+                    <person xml:id="Torello">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/2458669" ref="www.treccani.it/enciclopedia/lelio-torelli">Torello,
+                            Lelio</persName>
+                    </person>
+                    <person xml:id="Plutarco">
+                        <persName type="autore_citato" sameAs="http://viaf.org/viaf/268955446">Plutarco</persName>
+                    </person>
+                    <person xml:id="Titolivio">
+                        <persName type="autore_citato" sameAs=" http://viaf.org/viaf/99942145">Tito
+                            Livio</persName>
+                    </person>
+                    <person xml:id="Buonanni">
+                        <persName type="pers_citata">Buonanni, Antonmaria</persName>
+                    </person>
+                    <person xml:id="Polibio">
+                        <persName type="autore_citato" sameAs="http://viaf.org/viaf/267920293">Polibio</persName>
+                    </person>
+                    <person xml:id="Tacito">
+                        <persName type="autore_citato" sameAs="http://viaf.org/viaf/100226923">Tacito, Publio Cornelio</persName>
+                    </person>
+                    <person xml:id="Leone_X">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/316407580" ref="http://www.treccani.it/enciclopedia/papa-leone-x_%28Dizionario-Biografico%29/">Leone X, papa</persName>
+                    </person>
+                </listPerson>
+                <listPlace>
+                    <place xml:id="Firenze">
+                        <settlement type="città">Firenze</settlement>
+                    </place>
+                    <place xml:id="Cortona">
+                        <settlement type="città">Cortona</settlement>
+                    </place>
+                    <place xml:id="Lucca">
+                        <settlement type="città">Lucca</settlement>
+                    </place>
+                    <place xml:id="Francia">
+                        <settlement type="paese">Francia</settlement>
+                    </place>
+                    <place xml:id="Roma">
+                        <settlement type="città">Roma</settlement>
+                    </place>
+                    <place xml:id="Padova">
+                        <settlement type="città">Padova</settlement>
+                    </place>
+                    <place xml:id="Pavia">
+                        <settlement type="città">Pavia</settlement>
+                    </place>
+                </listPlace>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text n="Storia Fiorentina" xml:id="Storia_Fiorentina">
+        <front>
+            <p>
+                <hi>Legenda dei colori in Edizione Diplomatica</hi>
+            </p>
+            <p>Mano di Bonsi: testo base in nero</p>
+            <p>
+                Mano di Varchi:
+                <del hand="#A2">cassature</del>
+                ed
+                <add hand="#A2">aggiunte</add>
+            </p>
+            <p>
+                Mano di Baldini:
+                <del hand="#A3">cassature</del>
+                ed
+                <add hand="#A3">aggiunte</add>
+            </p>
+            <p>
+                Mano non identificata:
+                <del hand="#A4">cassature</del>
+                ed
+                <add hand="#A4">aggiunte</add>
+            </p>
+            <p>Le abbreviazioni nella diplomatica sono sciolte e segnalate in corsivo e grassetto</p>
+        </front>
+        <body>
+            <div n="Proemio" type="text" xml:id="Proemio">
+                <pb n="8r" xml:id="fol_8r" facs="data/images/single/fol_8r.JPG" />
+                <lb n="[8r]" />
+                <head>
+                    ☙ DELLA STORIA FIORENTINA
+                    <lb />
+                    DI BENEDETTO VARCHI COMINCIATA
+                    DALL’
+                    <lb />
+                    ANNO MILLE CINQUECENTO VENTISETTE,
+                    <lb />
+                    A L’ILL
+                    <emph rend="italic">USTRISSI</emph>
+                    MO ET ECC
+                    <emph rend="italic">ELLENTISSI</emph>
+                    MO
+                    <persName ref="#Cosimo">
+                        SIGNOR COSIMO
+                        <del hand="#A2">
+                            DE’
+                            <lb />
+                        </del>
+                        MEDICI
+                    </persName>
+                    , DUCA SECONDO DI
+                    <lb />
+                    FIRENZE
+                    <lb />
+                    <lb />
+                    PROEMIO
+                    ☙
+                </head>
+                <p>
+                    <choice>
+                        <sic>L'INTENDIMENTO</sic>
+                        <corr>L'intendimento</corr>
+                    </choice>
+                    nostro è di dovere
+                    <choice>
+                        <orig />
+                        <corr>,</corr>
+                    </choice>
+                    con quella diligenza
+                    <choice>
+                        <orig>,</orig>
+                        <corr />
+                    </choice>
+                    e verità
+                    <choice>
+                        <orig>,</orig>
+                        <corr />
+                    </choice>
+                    <lb />
+                    che potremo
+                    <choice>
+                        <orig>,</orig>
+                        <corr />
+                    </choice>
+                    e saperremo maggiore
+                    <choice>
+                        <orig />
+                        <corr>,</corr>
+                    </choice>
+                    tutte quelle cose ordinatamente, e
+                    <lb />
+                    particolarmente raccontare, le quali dal popolo
+                    <choice>
+                        <orig>Fiorentino</orig>
+                        <corr>fiorentino</corr>
+                    </choice>
+                    degne
+                    <lb />
+                    di memoria
+                    <choice>
+                        <orig>ò</orig>
+                        <corr>o</corr>
+                    </choice>
+                    in pace,
+                    <choice>
+                        <orig>ò</orig>
+                        <corr>o</corr>
+                    </choice>
+                    in guerra,
+                    <choice>
+                        <orig>ò</orig>
+                        <corr>o</corr>
+                    </choice>
+                    dentro,
+                    <choice>
+                        <orig>ò</orig>
+                        <corr>o</corr>
+                    </choice>
+                    fuori della città,
+                    <lb />
+                    <choice>
+                        <orig>ò</orig>
+                        <corr>o</corr>
+                    </choice>
+                    publicamente,
+                    <choice>
+                        <orig>ò</orig>
+                        <corr>o</corr>
+                    </choice>
+                    privatamente fatte furono, da che la
+                    <persName ref="#Famiglia_Medici">
+                        famiglia
+                        <lb />
+                        de’ Medici
+                    </persName>
+                    <choice>
+                        <orig>,</orig>
+                        <corr />
+                    </choice>
+                    e i loro seguaci la terza volta lo
+                    <choice>
+                        <orig>stato</orig>
+                        <corr>Stato</corr>
+                    </choice>
+                    di
+                    <placeName ref="#Firenze">Firenze</placeName>
+                    <lb />
+                    perdettero, più per la poca prudenza
+                    <choice>
+                        <orig>,</orig>
+                        <corr />
+                    </choice>
+                    e molta così viltà come
+                    <lb />
+                    avarizia di
+                    <persName ref="#Passerini">
+                        <choice>
+                            <orig>Mons</orig>
+                            <corr>mons</corr>
+                        </choice>
+                        <emph rend="italic">ignor</emph>
+                        m
+                        <emph rend="italic">esser</emph>
+                        Silvio Passerini
+                        <choice>
+                            <orig>Car</orig>
+                            <corr>car</corr>
+                        </choice>
+                        <emph rend="italic">dina</emph>
+                        le di
+                        <placeName ref="#Cortona">Cortona</placeName>
+                    </persName>
+                    , il
+                    <lb />
+                    quale
+                    <choice>
+                        <orig>à</orig>
+                        <corr>a</corr>
+                    </choice>
+                    nome di
+                    <persName ref="#ClementeVII">
+                        <choice>
+                            <orig>papa</orig>
+                            <corr>Papa</corr>
+                        </choice>
+                        Clemente
+                        <choice>
+                            <orig>.</orig>
+                            <corr />
+                        </choice>
+                        VII
+                        <choice>
+                            <orig>º.</orig>
+                            <corr />
+                        </choice>
+                    </persName>
+                    per lo
+                    <persName ref="#Ippolito">
+                        Mag
+                        <emph rend="italic">nifi</emph>
+                        co Ippolito
+                    </persName>
+                    <lb />
+                    in quel tempo la governava, che per alcuna altra
+                    <choice>
+                        <orig>piu</orig>
+                        <corr>più</corr>
+                    </choice>
+                    possente
+                    <lb />
+                    cagione
+                    <choice>
+                        <orig>.</orig>
+                        <corr>;</corr>
+                    </choice>
+                    <choice>
+                        <orig>La</orig>
+                        <corr>la</corr>
+                    </choice>
+                    qual cosa seguì agli
+                    <date when="1527-04-26">
+                        <choice>
+                            <orig>XXVI</orig>
+                            <corr>26</corr>
+                        </choice>
+                        giorni del mese d’
+                        <lb />
+                        <choice>
+                            <orig>A</orig>
+                            <corr>a</corr>
+                        </choice>
+                        <emph rend="italic">pri</emph>
+                        le
+                    </date>
+                    , quando il popolo inaspettatamente levatosi, furiosame
+                    <emph rend="italic">n</emph>
+                    te
+                    <lb />
+                    corse all’armi
+                    <choice>
+                        <orig>,</orig>
+                        <corr>;</corr>
+                    </choice>
+                    <choice>
+                        <orig>ò piu</orig>
+                        <corr>o più</corr>
+                    </choice>
+                    tosto agli
+                    <date when="1527-05-17">
+                        <choice>
+                            <orig>XVII</orig>
+                            <corr>17</corr>
+                        </choice>
+                        di maggio
+                    </date>
+                    , allhora
+                    <choice>
+                        <orig />
+                        <corr>,</corr>
+                    </choice>
+                    che
+                    <lb />
+                    <persName ref="#Famiglia_Medici">i Medici</persName>
+                    , di
+                    <placeName ref="#Firenze">Firenze</placeName>
+                    partendosi, se ne fuggirono
+                    <choice>
+                        <orig>à</orig>
+                        <corr>a</corr>
+                    </choice>
+                    <placeName ref="#Lucca">Lucca</placeName>
+                    l’an
+                    <choice>
+                        <orig>-</orig>
+                        <reg resp="#D.B." />
+                    </choice>
+                    <lb />
+                    no della concezzione di N
+                    <emph rend="italic">ostro</emph>
+                    S
+                    <emph rend="italic">ignore</emph>
+                    Giesù Cristo (che da tal gior
+                    <choice>
+                        <orig>-</orig>
+                        <reg resp="#D.B." />
+                    </choice>
+                    <lb />
+                    no principia
+                    <del hand="#A1">va</del>
+                    no l’anno
+                    <span n="miaone">
+                        <choice>
+                            <orig>^</orig>
+                            <reg resp="#D.B." />
+                        </choice>
+                    </span>
+                    <add hand="#A2" place="bottom" n="miaone">
+                        <span n="miaone">
+                            <choice>
+                                <orig>^</orig>
+                                <reg resp="#D.B." />
+                            </choice>
+                        </span>
+                        benché non senza errore manifesto,
+                        <del hand="#A2">
+                            i
+                            Fiorentini
+                            <emph rend="italic">ecc.</emph>
+                        </del>
+                    </add>
+                    i Fiorentini
+                    <date when="1527">
+                        millecinquecento venti
+                        <choice>
+                            <orig>-</orig>
+                            <reg resp="#D.B." />
+                        </choice>
+                        <lb />
+                        sette
+                    </date>
+                    , infino
+                    <choice>
+                        <orig>à</orig>
+                        <corr>a</corr>
+                    </choice>
+                    che ella, ed eglino con i danari della chiesa, e col
+                    <choice>
+                        <orig>-</orig>
+                        <reg resp="#D.B." />
+                    </choice>
+                    <pb n="8v" xml:id="fol_8v" facs="data/images/single/fol_8v.JPG" />
+                    <lb n="[8v]" />
+                    le forze dell’Imperio nell’anno
+                    <date when="1530">millecinquecentotrenta</date>
+                    agli
+                    <date when="1530-08-20">
+                        <choice>
+                            <orig>.XX.</orig>
+                            <corr>20</corr>
+                        </choice>
+                        <lb />
+                        d’agosto
+                    </date>
+                    <choice>
+                        <orig>,</orig>
+                        <corr />
+                    </choice>
+                    fatto parlamento, lo racquistarono.
+                    <app>
+                        <lem wit="#RC4" hand="#A1">
+                            <del hand="#A3">
+                                Benché, l’animo no
+                                <choice>
+                                    <orig>-</orig>
+                                    <reg resp="#D.B." />
+                                </choice>
+                                <lb />
+                                stro è (se la vita ne basterà) di scrivere per maggiore notizia della
+                                <lb />
+                                mutazione dello
+                                <placeName ref="#Firenze">
+                                    <choice>
+                                        <orig>stato</orig>
+                                        <corr>Stato</corr>
+                                    </choice>
+                                    di Firenze
+                                </placeName>
+                                infino al
+                                <del hand="#A2">Primo</del>
+                                <del hand="#A2">
+                                    <add hand="#A2" place="above">27</add>
+                                </del>
+                                <del hand="#A2">
+                                    <add hand="#A2" place="below">primo</add>
+                                </del>
+                                <del hand="#A2">giorno</del>
+                                <del hand="#A2">di Maggio</del>
+                                <del hand="#A2" n="miaone">
+                                    <add hand="#A2" place="above">ventisettesimo d’Aprile</add>
+                                </del>
+                                <del hand="#A3">
+                                    <add hand="#A2" place="margin" n="miaone">
+                                        <date when="1532-05-01">
+                                            primo
+                                            <lb />
+                                            giorno
+                                            <lb />
+                                            di Maggio
+                                        </date>
+                                    </add>
+                                </del>
+                                <lb />
+                                <date when="1532-05-01">dell’anno mille cinquecentotrentadue</date>
+                                , nel qual tempo
+                                <persName ref="#Alessandro_de_Medici">
+                                    Alessandro
+                                    <lb />
+                                    de’ Medici
+                                </persName>
+                                <choice>
+                                    <orig />
+                                    <corr>,</corr>
+                                </choice>
+                                figliuolo non legittimo di
+                                <persName ref="#Lorenzo_De_Medici">Lorenzo già Duca d’Urbino</persName>
+                                ,
+                                <lb />
+                                levata la
+                                <choice>
+                                    <orig>signoria</orig>
+                                    <corr>Signoria</corr>
+                                </choice>
+                                , e ’l Gonfaloniere,
+                                <choice>
+                                    <orig>fù</orig>
+                                    <corr>fu</corr>
+                                </choice>
+                                a vita con tutti i suoi
+                                <lb />
+                                discendenti, e successori legittimi
+                                <choice>
+                                    <orig>Doge</orig>
+                                    <corr>doge</corr>
+                                </choice>
+                                creato della
+                                <placeName ref="#Firenze">
+                                    Republica Fio
+                                    <choice>
+                                        <orig>-</orig>
+                                        <reg resp="#D.B." />
+                                    </choice>
+                                    <lb />
+                                    rentina
+                                </placeName>
+                                : spazio breve sì, non comprendendo egli se non cinque
+                                <lb />
+                                anni, e
+                                <del hand="#A2">cinque</del>
+                                <del hand="#A2">
+                                    <add hand="#A2" place="above">un</add>
+                                </del>
+                                <add hand="#A2" place="above">cinque</add>
+                                giorn
+                                <del hand="#A2">
+                                    i
+                                    <add hand="#A2">o</add>
+                                </del>
+                                <add hand="#A2">i</add>
+                                , ma tale però e così fatto
+                                <choice>
+                                    <orig>,</orig>
+                                    <corr />
+                                </choice>
+                                che in ello
+                                <choice>
+                                    <orig>,</orig>
+                                    <corr>-</corr>
+                                </choice>
+                                e
+                                <lb />
+                                massimamente ne’ tre primi anni
+                                <choice>
+                                    <orig />
+                                    <corr>,</corr>
+                                </choice>
+                                sotto il governo di tre gonfalo
+                                <choice>
+                                    <orig>-</orig>
+                                    <reg resp="#D.B." />
+                                </choice>
+                                <lb />
+                                nieri di diversa natura, condizione
+                                <choice>
+                                    <orig>,</orig>
+                                    <corr />
+                                </choice>
+                                e volontà
+                                <choice>
+                                    <orig>,</orig>
+                                    <corr>:</corr>
+                                </choice>
+                                <persName ref="#Capponi">Niccolò Capponi</persName>
+                                ,
+                                <lb />
+                                <persName ref="#F_Carducci">Francesco Carducci</persName>
+                                , e
+                                <persName ref="#Girolami">Raffaello Girolami</persName>
+                                <choice>
+                                    <orig>,</orig>
+                                    <corr>-</corr>
+                                </choice>
+                                nacquero
+                                <choice>
+                                    <orig />
+                                    <corr>,</corr>
+                                </choice>
+                                insieme con
+                                <lb />
+                                uno assedio
+                                <choice>
+                                    <orig>,</orig>
+                                    <corr />
+                                </choice>
+                                del quale non
+                                <choice>
+                                    <orig>sò</orig>
+                                    <corr>so</corr>
+                                </choice>
+                                se mai
+                                <choice>
+                                    <orig>fù</orig>
+                                    <corr>fu</corr>
+                                </choice>
+                                il più memorabile, tutte
+                                <lb />
+                                quasi quelle varietà et accidenti, che in un popolo non meno ambizioso
+                                <choice>
+                                    <orig>,</orig>
+                                    <corr />
+                                </choice>
+                                <lb />
+                                e sottile che
+                                <add hand="#A2" place="above">diligente et</add>
+                                avaro,
+                                <choice>
+                                    <orig>ne</orig>
+                                    <corr>nè</corr>
+                                </choice>
+                                meno ricco
+                                <choice>
+                                    <orig>,</orig>
+                                    <corr />
+                                </choice>
+                                <del hand="#A1">che</del>
+                                <add hand="#A1" place="above">
+                                    <emph rend="italic">et</emph>
+                                </add>
+                                industrioso,
+                                <del hand="#A2">e</del>
+                                <add hand="#A1" place="above">che</add>
+                                nobile, di sotto q
+                                <emph rend="italic">ue</emph>
+                                l
+                                <lb />
+                                giogo contra tempo
+                                <choice>
+                                    <orig>,</orig>
+                                    <corr />
+                                </choice>
+                                e per la non pensata uscito, il quale
+                                <choice>
+                                    <orig>.XV.</orig>
+                                    <corr>15</corr>
+                                </choice>
+                                anni
+                                <lb />
+                                continovi premuto l’havea, non pure sogliono, ma possono occorrere.
+                            </del>
+                        </lem>
+                        <rdg cause="del" wit="#RC4c" />
+                    </app>
+                    <lb />
+                    Chiara cosa è che la
+                    <placeName ref="#Firenze">città di Firenze</placeName>
+                    , la quale,
+                    <choice>
+                        <orig>ò</orig>
+                        <corr>o</corr>
+                    </choice>
+                    sua colpa
+                    <choice>
+                        <orig>ò</orig>
+                        <corr>o</corr>
+                    </choice>
+                    sua
+                    <lb />
+                    fortuna,
+                    <choice>
+                        <orig>fù</orig>
+                        <corr>fu</corr>
+                    </choice>
+                    alle divisioni
+                    <choice>
+                        <orig>,</orig>
+                        <corr />
+                    </choice>
+                    e alle discordie cittadine sempre maraviglio
+                    <choice>
+                        <orig>-</orig>
+                        <reg resp="#D.B." />
+                    </choice>
+                    <lb />
+                    samente sottoposta, mai non si trovò
+                    <choice>
+                        <orig>,</orig>
+                        <corr />
+                    </choice>
+                    <choice>
+                        <orig>ne</orig>
+                        <corr>nè</corr>
+                    </choice>
+                    con
+                    <choice>
+                        <orig>piu</orig>
+                        <corr>più</corr>
+                    </choice>
+                    certo pericolo di
+                    <choice>
+                        <orig>-</orig>
+                        <reg resp="#D.B." />
+                    </choice>
+                    <lb />
+                    visa,
+                    <choice>
+                        <orig>ne</orig>
+                        <corr>nè</corr>
+                    </choice>
+                    con maggior danno discorde, che in quel tempo
+                    <choice>
+                        <orig>. Onde</orig>
+                        <corr>; onde</corr>
+                    </choice>
+                    <lb />
+                    avvenne
+                    <choice>
+                        <orig>,</orig>
+                        <corr />
+                    </choice>
+                    che ella
+                    <choice>
+                        <orig />
+                        <corr>,</corr>
+                    </choice>
+                    dopo l’havere la guerra contra l’esercito del
+                    <choice>
+                        <orig>Pa</orig>
+                        <corr>pa</corr>
+                    </choice>
+                    <choice>
+                        <orig>-</orig>
+                        <reg resp="#D.B." />
+                    </choice>
+                    <lb />
+                    pa e dell’
+                    <choice>
+                        <orig>Imperadore</orig>
+                        <corr>imperadore</corr>
+                    </choice>
+                    con incredibile
+                    <choice>
+                        <orig>ò</orig>
+                        <corr>o</corr>
+                    </choice>
+                    ardire
+                    <choice>
+                        <orig>,</orig>
+                        <corr />
+                    </choice>
+                    e costanza
+                    <choice>
+                        <orig>,</orig>
+                        <corr>(</corr>
+                    </choice>
+                    secondo
+                    <lb />
+                    <choice>
+                        <orig>che</orig>
+                        <corr>ché</corr>
+                    </choice>
+                    <choice>
+                        <orig>à</orig>
+                        <corr>a</corr>
+                    </choice>
+                    noi pare
+                    <choice>
+                        <orig>,</orig>
+                        <corr>),</corr>
+                    </choice>
+                    <choice>
+                        <orig>ò</orig>
+                        <corr>o</corr>
+                    </choice>
+                    temerità,
+                    <add hand="#A1">
+                        <emph rend="italic">et</emph>
+                    </add>
+                    ostinazione, secondo il giudizio
+                    <del hand="#A1">d'</del>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>
