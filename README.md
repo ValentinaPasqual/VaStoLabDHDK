@@ -14,5 +14,5 @@ In this repostitory you will find all the materials to work on VaSto Project.
 
 * **EVT2**. In this folder you can find EVT2 (VaSto version) where you can upload your encoded text (we will explain it better when we will finish the encondig part).
 
-* **Visualisation in EVT2** click here to see how your work can be visualised in EVT2
+* **Visualisation in EVT2**. [Here](https://valentinapasqual.github.io/ProgettoVasto/) you can find "Storia Fiorentina" on EVT2. In this realise you can find the visualisation of trans-edition features and diplomatic edition. Finally, you can find how the critical edition can be visualised in 8r and 8v.  
 
