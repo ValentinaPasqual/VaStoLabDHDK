@@ -16,3 +16,5 @@ In this repostitory you will find all the materials to work on VaSto Project.
 
 * **Visualisation in EVT2**. [Here](https://valentinapasqual.github.io/ProgettoVasto/) you can find "Storia Fiorentina" on EVT2. In this realise you can find the visualisation of trans-edition features and diplomatic edition. Finally, you can find how the critical edition can be visualised in 8r and 8v.  
 
+[Here](http://evt.labcd.unipi.it) you can find EVT1 and EVT2 website.
+
