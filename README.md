@@ -18,3 +18,5 @@ In this repostitory you will find all the materials to work on VaSto Project.
 
 [Here](http://evt.labcd.unipi.it) you can find EVT1 and EVT2 website.
 
+[Here](https://www.freeformatter.com/xml-formatter.html) you can find an XML-formatter which can help you with your encoding
+
