@@ -23,6 +23,6 @@ Normalisation from diplomatic to critical text
 be careful with spaces! EVT is sensitive to the spaces: please respect meticulously
  the space between the words (we suggest you to write all tags on a single line) 
 
-## Variations between RC4 and RC4
+## Variations between RC4 and RC4c
 ```<app><lem wit="#RC4" hand="#A1">testo autore</lem> <rdg cause="del" wit="#RC4c">Censura </rdg></app> ```
 Please remember to declare the witness, the cause (add or del) and the hand
